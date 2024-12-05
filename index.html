@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<audio id="clickSound" src="sound2.mp3" preload="auto"></audio>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Button</title>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  
+  
+  
+
+
+  <style>
+    body {
+      background-color: rgba(232, 231, 224, 255);
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      height: 100vh; /* Full viewport height */
+      margin: 0; /* Remove default margin */
+    }
+
+    button {
+      background-color: rgba(232, 231, 224, 255);
+      width: 50%; /* Use relative width */
+      max-width: 200px; /* Set a maximum width for large screens */
+      height: 65px;
+      font-size: 1.25rem; /* Relative font size */
+      border-radius: 40px; /* Adjust for consistent rounding */
+      font-family: 'Ubuntu', sans-serif;
+      cursor: pointer;
+      transition: all 0.36s ease-in-out;
+      
+    }
+
+    button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 16px 0px rgba(0, 0, 0, 1);
+      transition: all 0.26s ease-in-out;
+    }
+
+    button:active {
+      transform: translateY(6px);
+      box-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+      transition: box-shadow 0.15s;
+    }
+  </style>
+</head>
+
+<button id="clickButton" class="button">Click Me</button>
+
+<body>
+  
+  <script src="script.js"></script>
+</body>
+</html>
